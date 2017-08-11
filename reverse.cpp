@@ -5,7 +5,7 @@ int main()
 {
   std::vector<char> v;
 
-  int c;
+  char c;
   while(c = std::cin.get(), !std::cin.eof())
     v.push_back(c);
 
