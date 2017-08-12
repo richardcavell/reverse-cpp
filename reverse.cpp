@@ -6,7 +6,7 @@ int main()
   std::vector<char> v;
 
   char c;
-  while(c = std::cin.get(), !std::cin.eof())
+  while(std::cin.get(c))
     v.push_back(c);
 
   if (!v.empty())
