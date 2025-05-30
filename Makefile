@@ -1,7 +1,7 @@
 # Makefile for reverse-cpp
-# (c) 2017 Richard Cavell
+# (c) 2017-2025 Richard Cavell
 
-CXX += -std=c++14
+CXX    += -std=c++17
 CFLAGS += -Wall -Wextra -Werror -pedantic
 
 reverse: reverse.cpp

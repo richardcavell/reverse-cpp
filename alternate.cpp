@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <algorithm>
+#include <utility>
 
 int main()
 {
@@ -13,7 +13,8 @@ int main()
   while(std::cin.get(c))
     s.push_back(c);
 
-  std::reverse(s.begin(), s.end());  /* This is C++17 */
+  for (auto bi = s.begin(), ei = s.end()-1; bi < ei; ++bi, --ei)
+        std::swap(*bi, *ei);
 
   std::cout.write(s.data(), s.size());
 }
